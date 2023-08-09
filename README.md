@@ -56,113 +56,7 @@ class="col-md-10"  => has 10 column from 12
 ![slider](https://github.com/tomasjr37/books/assets/64990413/5be9868a-00ee-48cb-9b54-49ec77cf5082)
 
      //  using swiper  // 
- <div class="container swiper">
-    <div class="slide-container">
-      <div class="card-wrapper swiper-wrapper">
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="images/javascript.jpg" alt="" />
-          </div>
-          <div class="profile-details">
-            <img src="images/Person1.jpg" alt="" />
-            <div class="name-job">
-              <h3 class="name">David Cardlos</h3>
-              <h4 class="job">Full Stack Developer python & javascript</h4>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">35</span><sup>25</sup> <del> <span style="color: rgb(110, 109, 107);">50$</span></del> </p>
-            </div>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="images/machine.webp" alt="" />
-          </div>
-          <div class="profile-details">
-            <img src="images/person5.webp" alt="" />
-            <div class="name-job">
-              <h3 class="name">Siliana Ramis</h3>
-              <h4 class="job">Photographer</h4>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">18</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">20$</span></del> </p>
-            </div>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="images/daggable3.jpg" alt="" />
-          </div>
-          <div class="profile-details">
-            <img src="images/person2.jpg" alt="" />
-            <div class="name-job">
-              <h3 class="name">Richard Bond</h3>
-              <h4 class="job">Data Analyst</h4>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">28</span><sup>15</sup> <del> <span style="color: rgb(110, 109, 107);">30$</span></del> </p>
-            </div>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="images/draggable4.avif" alt="" />
-          </div>
-          <div class="profile-details">
-            <img src="images/person3.jpg" alt="" />
-            <div class="name-job">
-              <h3 class="name">Priase</h3>
-              <h4 class="job">App Developer</h4>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">20</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">25$</span></del> </p>
-
-
-
-
-
-
-            </div>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="images/python.png" alt="" />
-          </div>
-          <div class="profile-details">
-            <img src="images/person4.jpeg" alt="" />
-            <div class="name-job">
-
-             
-              <h3 class="name">James Laze</h3>
-              <h4 class="job">Developer</h4>
-              <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-              <p> <sup>$</sup><span style="font-family: bold; font-size: large;">18</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">20$</span></del> </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
-  </div>
+ 
 
 
 
@@ -172,6 +66,7 @@ class="col-md-10"  => has 10 column from 12
 
 
 # footer  
+![footer](https://github.com/tomasjr37/books/assets/64990413/21469b04-5040-4071-83bc-a3e5c2092253)
 
  <!--  using bootstrap            -->
 <div class="container" >
