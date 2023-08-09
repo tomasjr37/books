@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- using cdn swiper tousing slide cards  -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!--        -->
+
+
+
+   <!-- using cdn font-awesome to use some free icons from website  --> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <!-- import css file  -->
+    <link rel="stylesheet" href="style.css" />
+    <!--import file bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com : books</title>  <!-- the title apear in the tab  -->
+    <link rel="icon" type="images/x-icon" href="images/amazon.png" />  <!-- the icon in the tab  -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg"> <!-- this bootstrap navbar use class navbar-expand-lg to be responsive  -->
+      <div class="container-fluid"><!-- the container div have all components of navbar  -->
+        <a class="navbar-brand" href="#">
+          <div class="logo">  <!-- class logo contain img of amazon logo in right navbar  -->
+            <img src="images/newlogo.jpg" alt="logo" /></div
+        ></a>  <!--End of Logo-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> <i class="fa-sharp fa-solid fa-tally-3" style="color: #eff1f6;"></i></span>
+          <!-- the button apear when app run in mobile or tablet    -->
+        </button>
+                             
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--class collapse : this element will apear in the collapse when we run aapp in mobile -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!--element of navbar as list -->
+            <li class="nav-item">   <!--the first element after logo-->
+              <a class="nav-link active" aria-current="page" href="#">
+                <div class="adress">
+                  <span> deliver to </span>  
+
+                  <h5 class="egypt">
+                    <i
+                      class="fa-solid fa-location-dot fa-sm"
+                      style="color: #949aa4"></i>
+                    Egypt
+                  </h5>
+                </div></a
+              >
+            </li>
+
+            <!-- the search in navbar in center of nav -->
+            <li class="nav-item">
+              <form class="search" role="search">
+                <input
+                  class="form-control me-5"
+                  type="search"
+                  placeholder="search Amazon"
+                  aria-label="Search" />
+                <button
+                  style="
+                    background-color: rgb(238, 158, 10);
+                    margin: 0px;
+                    width: 50px;
+                  ">
+                  <i
+                    class="fa-sharp fa-solid fa-magnifying-glass fa-xl"
+                    style="color: #1d2025"></i>
+                </button>
+              </form>
+            </li>
+                <!-- the Drop down to select a language   -->
+            <li class="nav-item dropdown">
+              <div class="droplang">
+                <a
+                  id="droplang"
+                  style="margin-top: 20px; color: azure"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img
+                    src="images/egypt2.jpg "
+                    style="width: 20px; height: 20px" />AR
+                </a>
+              </div>
+
+                 <!--  the drop-down menu    "Bootstrap" -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                  egypt
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <!--element after drop down language-->
+              <div class="adress-right">
+                <span> Returns </span>
+
+                <h5 class="egypt">&Order</h5>
+              </div>
+            </li>
+
+            <li>
+              <div class="adress-right">
+                <span> Hello , signin </span>
+
+                <h5 class="egypt">Account &Lists</h5>
+              </div>
+            </li>
+
+            <!-- Cart and the icon from font-awesome and the 0 indicate to the #of book will buy -->
+            <li>
+              <div class="cart">
+                <h5>0</h5>
+                <i
+                  class="fa-solid fa-cart-shopping fa-xl"
+                  style="color: #e7ecf3"></i>
+                <span>Cart</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--second navagation bar-->
+    <div class="secondnav">
+      <ul class="nav justify-content-start"> <!-- class nav from bootstrap    -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Today's Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customer Service </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registry </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gift Cards </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--sidebar and content   -->
+
+    <div class="row">  <!--the row of the page under the nav bar row =  12 col  -->
+      <div id="sidebar" class="col-2">  <!--sidebar take 2 col  of 12 col -->
+        <ul>
+          <span>Popula in Books </span>  <!-- header-->
+          <li>summer Reading</li>
+          <li>read with pride</li>     
+          <li>books by black author</li>
+          <a style="color:black; text-decoration: none;" href="BookSpanish/apis.html"><li>books in spanish</li></a>
+          <li>children's books</li>
+          <li>Deals in books</li>
+          <li>Beast books of 2023 so far</li>
+          <li>Beast books of the month</li>
+          <li>Beast books in this week</li>
+        </ul>
+
+        <ul>
+          <span>New Releases </span>
+          <li>Arts & Photography</li>
+          <li>read with pride</li>
+          <li>Biographies & Memoirs</li>
+          <li>Calendars</li>
+          <li>children's books</li>
+          <li>Deals in books</li>
+          <li>Children's Books</li>
+          <li>Beast books of the month</li>
+          <li>Business & Money</li>
+        </ul>
+
+        <ul>
+          <span>More in book </span>
+          <li>summer Reading</li>
+          <li>read with pride</li>
+          <li>books by black author</li>
+          <li>books in spanish</li>
+          <li>children's books</li>
+          <li>Deals in books</li>
+          <li>Beast books of 2023 so far</li>
+          <li>Beast books of the month</li>
+          <li> <a href="#">Beast books in this week </a></li>
+        </ul>
+      </div>
+           <!--end of sidebar-->
+      <div id="content" class="col-10">  <!-- the content is 10 col from 12-->
+        <h1 style="text-align: center; font-family: famile">Books at Amazon</h1>
+        <div>
+          <img
+            class="img-fluid"
+            href="www.google.com"
+            src="images/capture.jpg" />
+        </div>
+     <div class="container">
+        <div class="row">       <!--this row is 10col from the all page-->
+
+        <div class="col-md-3">   
+<!--       col-md-3   the div will take 3 col  and another after 3 column in the same row but will the page in md only one div in the all col to be response                    -->          
+          <div class="books">
+
+    <img src="images/housemaid.JPG" alt="book" class="img-fluid" style="width: 60px;height: 100px; ">
+  <p>The Housemaid</p>
+        <!--the rating of books-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"> </span>  <!--class checkes indicate to full star  -->
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> 
+
+   <p>15.4 $</p>  <!-- the price --> 
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="books">
+    
+        <img src="images/ironflame.JPG" alt="book" class="img-fluid" style="width: 60px;height: 100px; ">
+      <p>Ironflame</p>
+      
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+
+      <p>15.4 $</p>
+            </div>
+          </div>
+
+
+
+
+
+          
+      <div class="col-md-3">
+        <div class="books">
+    
+        <img src="images/man.JPG" alt="book" class="img-fluid" style="width: 60px;height: 100px; ">
+      <p>Man of city</p>
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+      <p>9 $</p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col-md-3">
+            <div class="books">
+        
+            <img src="images/summer.JPG" alt="book" class="img-fluid" style="width: 60px;height: 100px; ">
+          <p>Summer sister a novel</p>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+          <p>10.4 $</p>
+                </div>
+              </div>
+
+
+
+    </div>
+
+
+        <!--new row about pargraph -->
+  <div class="row">
+      <div class="container">   
+    <h5>Books at Amazon </h5>
+     
+  <p> 
+
+    The Amazon.com Books homepage helps you explore Earth's Biggest Bookstore without ever leaving the comfort of your couch. Here you'll find current best sellers in books, new releases in books, deals in books, Kindle eBooks, Audible audiobooks, and so much more. We have popular genres like Literature & Fiction, Children's Books, Mystery & Thrillers, Cooking, Comics & Graphic Novels, Romance, Science Fiction & Fantasy, and Amazon programs such as Best Books of the Month, the Amazon Book Review, and Amazon Charts to help you discover your next great read.
+
+    In addition, you'll find great book recommendations that may be of interest to you based on your search and purchase history, as well as the most wished for and most gifted books. We hope you enjoy the Amazon.com Books homepage!
+
+
+
+
+  </p>
+       
+      </div>
+  </div>
+
+    <!--  Draggable using css , js ,  and swiper framework        -->
+  <div class="container swiper">
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/javascript.jpg" alt="" />
+          </div>
+          <div class="profile-details">
+            <img src="images/Person1.jpg" alt="" />
+            <div class="name-job">
+              <h3 class="name">David Cardlos</h3>
+              <h4 class="job">Full Stack Developer python & javascript</h4>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">35</span><sup>25</sup> <del> <span style="color: rgb(110, 109, 107);">50$</span></del> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/machine.webp" alt="" />
+          </div>
+          <div class="profile-details">
+            <img src="images/person5.webp" alt="" />
+            <div class="name-job">
+              <h3 class="name">Siliana Ramis</h3>
+              <h4 class="job">Photographer</h4>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">18</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">20$</span></del> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/daggable3.jpg" alt="" />
+          </div>
+          <div class="profile-details">
+            <img src="images/person2.jpg" alt="" />
+            <div class="name-job">
+              <h3 class="name">Richard Bond</h3>
+              <h4 class="job">Data Analyst</h4>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">28</span><sup>15</sup> <del> <span style="color: rgb(110, 109, 107);">30$</span></del> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/draggable4.avif" alt="" />
+          </div>
+          <div class="profile-details">
+            <img src="images/person3.jpg" alt="" />
+            <div class="name-job">
+              <h3 class="name">Priase</h3>
+              <h4 class="job">App Developer</h4>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                            <p> <sup>$</sup><span style="font-family: bold; font-size: large;">20</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">25$</span></del> </p>
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/python.png" alt="" />
+          </div>
+          <div class="profile-details">
+            <img src="images/person4.jpeg" alt="" />
+            <div class="name-job">
+
+             
+              <h3 class="name">James Laze</h3>
+              <h4 class="job">Developer</h4>
+              <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+              <p> <sup>$</sup><span style="font-family: bold; font-size: large;">18</span><sup>99</sup> <del> <span style="color: rgb(110, 109, 107);">20$</span></del> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+ 
+
+
+
+ 
+
+
+     </div>
+      </div>
+      
+
+
+
+   <div class="container" >
+    <div class="row">
+     <footer>
+      <a href="#" class="footer-title">
+        Back to top
+      </a>
+      <div class="footer-items" >
+        <ul>
+          <h3>Get to Know Us</h3>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Amazon Science</a></li>
+        </ul>
+        <ul>
+          <h3>Connect with Us</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <ul>
+          <h3>Make Money with Us</h3>
+          <li><a href="#">Sell on Amazon</a></li>
+          <li><a href="#">Sell under Amazon Accelerator</a></li>
+          <li><a href="#">Protect and Build Your Brand</a></li>
+          <li><a href="#">Amazon Global Selling</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Fulfillment by Amazon</a></li>
+          <li><a href="#">Advertise Your Products</a></li>
+          <li><a href="#">Amazon Pay on Merchants</a></li>
+        </ul>
+        <ul>
+          <h3>Let Us Help You</h3>
+          <li><a href="#">COVID-19 and Amazon</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Return Centre</a></li>
+          <li><a href="#">100% Purchase Protection</a></li>
+          <li><a href="#">Amazon App Download</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </footer>
+    </div>
+   </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="draggable.js"></script>
+  </body>
+</html>
