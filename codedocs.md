@@ -12,4 +12,5 @@ async function getBook(){   // The keyword async before a function makes the fun
                        // many feature as name , title , id , price , rate 
   }
 }
+![api data](https://github.com/tomasjr37/books/assets/64990413/aafed6de-b72b-43ed-8382-2204f94f628c)
 
