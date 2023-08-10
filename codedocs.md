@@ -1,13 +1,14 @@
 # fetch data
-
-async function getBook(){   // The keyword async before a function makes the function return a promise
+  # The keyword async before a function makes the function return a promise
+   async function getBook(){   
    let response  = await fetch("http://127.0.0.1:5000/home")
-
-     let books = await response.json()  // wait the data from response and convert it as json by function .json()
-   console.log(books)      // test the data in books in console to ready to display in page
-     for (let i=0 ; i<=books.BOOKS.length ; i++){
+    # wait the data from response and convert it as json by function .json()
+   let books = await response.json() 
+   # test the data in books in console to ready to display in page
+   console.log(books)      
+   for (let i=0 ; i<=books.BOOKS.length ; i++){
       // id => content the element of html will display the data inside here 
-   document.getElementById("content").innerHTML += `<div id="content">  <h1>${books.BOOKS[i].book_name} </h1>  <p>${books.BOOKS[i].book_price} </p>     </div> `
+     document.getElementById("content").innerHTML += `<div id="content">  <h1>${books.BOOKS[i].book_name} </h1>  <p>${books.BOOKS[i].book_price} </p>     </div> `
                        // the data come as 2 array contain an array and the second array as a book have
                        // many feature as name , title , id , price , rate 
   }
