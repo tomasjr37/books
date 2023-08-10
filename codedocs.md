@@ -13,5 +13,26 @@
                        // many feature as name , title , id , price , rate 
   }
 }
+
+
+# the code
+
+
+
+
+![Fetch](https://github.com/tomasjr37/books/assets/64990413/62df30b9-1ff2-4b06-b8ba-2d521e1589bd)
+
+
+
+
+
+
+
+
+
+
+
+# the result
+
 ![api data](https://github.com/tomasjr37/books/assets/64990413/aafed6de-b72b-43ed-8382-2204f94f628c)
 
